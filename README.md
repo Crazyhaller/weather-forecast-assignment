@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Weather Forecast Web App
 
-## Getting Started
+This is a simple weather forecast web application built using React and Typescript. It utilizes the OpenDataSoft API to fetch city data and the OpenWeather API to retrieve weather forecast data based on city coordinates.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- View a table of cities with their respective timezones, countries, and coordinates.
+- Search for cities using the search button.
+- Sort the cities using the sort icon.
+- Navigate to a weather page to view the weather forecast of a selected city.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- React
+- Typescript
+- Axios for handling API requests
+- Tailwind CSS for styling
+- React Icons for icons
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Usage
 
-## Learn More
+1. On the homepage, you'll see a table of cities.
+2. Use the search button to search for a specific city.
+3. Click on a city to view its weather forecast.
+4. On the weather page, you'll see the weather forecast for the selected city.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- To run this project locally:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Clone the repository:
 
-## Deploy on Vercel
+  ```
+  git clone https://github.com/Crazyhaller/weather-forecast-assignment.git
+  ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Navigate to the project directory:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  ```
+  cd weather-forecast-assignment
+  ```
+
+- Install the dependencies:
+
+  ```
+  npm install
+  ```
+
+- Start the development server:
+
+  ```
+  npm run dev
+  ```
+
+- Open your browser and visit `http://localhost:5173` to view the application.
+
+## Contributing
+
+Contributions are welcome! If you'd like to contribute to this project, please fork the repository and submit a pull request.
