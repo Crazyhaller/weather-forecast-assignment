@@ -7,6 +7,8 @@ import {
   WiHorizon,
 } from 'react-icons/wi'
 
+const weatherApi = import.meta.env.VITE_WEATHER_API
+
 interface WeatherData {
   weather: {
     main: string
@@ -35,7 +37,7 @@ const Weather = () => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
-          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${process.env.REACT_APP_WEATHER_API_KEY}`
+          `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${weatherApi}`
         )
 
         const responseData = await response.data
